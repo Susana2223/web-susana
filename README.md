@@ -29,4 +29,6 @@ Mi tema elegido : Amigurumis
 - Formulario de pedidos
 - Footer con contacto para redes sociales
 
+# Proyecto creado con HTML, CSS Y JavaScript
+
 # GitHub: Susana2223
