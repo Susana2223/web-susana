@@ -1,0 +1,15 @@
+#inicio{
+    background-color: #fbe4ec;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.boton{
+  display: inline-block;
+  background-color: #6d1a36;
+  color: white;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: bold;
+}
