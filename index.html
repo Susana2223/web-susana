@@ -4,38 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigurumis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <h1>El mundo de los Amigurumis</h1>
         <nav>
-            <a href="#inicio"></a>
-            <a href="#Catálogo"></a>
-            <a href="#Precios"></a>
-            <a href="#Opiniones"></a>
-            <a href="Pedidos"></a>
+           <div class="logo">
+            <img src="images/logo.webp" alt="logo de amigurumi">
+           </div>
+           <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#amigurumis">Amigurumis</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#vendido">Lo más vendido</a></li>
+            <li><a href="#tutoriales">Tutoriales</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#pedidos">Pedidos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+           </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <h2>Tejidos hechos a mano, con mucho amor y cariño</h2>
-            <a href="#pedidos" class="boton">Haz tu pedido</a>
+        <section  class="home"  id="inicio">
+           <h1>Amigurumis tejidos con mucho amor y con encanto de ternura </h1>
+           <p>
+            Regalos únicos e inigualables, perfecto para regalar a esa persona especial
+           </p>
+            <a href="#catalogo" class="btn-catalogo">Ver nuestro Catálogo</a>
         </section>
-        <section>
-            <h2>Nuestros Amigurumis</h2>
-            <div>
+        <section class="amigurumi" id="amigurumis">
+            <h2>¿Qué hace tan especial a los amigurumis?</h2>
+            <p>
+                Estos adorables muñecos, cuyo origen se remonta al Japón, son pequeñas obras de arte tejidas a mano con la técnica de crochet.
+                Más allá de su apariencia tierna, su cuerpo suave y su relleno esponjoso, los amigurumis tienen la capacidad de representar cualquier forma,
+                desde animales y plantas hasta tus personajes favoritos. Lo que realmente los hace únicos es su mística: cuenta la leyenda que son guardianes secretos y confidentes eternos.
+                Al no tener boca, estos pequeños compañeros están diseñados para escuchar y proteger tus sentimientos en silencio.
+            </p>
+        </section>
+
+        <section class="catalog" id="catalogo">
+            <h2>Catálogo</h2>
+            <div class="grid">
                 <article>
-                    <img src="images/perrito_01.webp" alt="Perrito">
-                    <h3>Conejo</h3>
-                    <p>
-                        Con hermosos colores pastel y orejas demasiado largas
-                    </p>
+                    <h3>Perrito Pochacco</h3>
+                    <img src="images/perrito_01.webp" alt="Amigurumi Perrito">
+                    <p class="precio">S/40.00</p>
+                    <button class="btn-comprar" onclick="ElegirProducto('Perrito Pochacco')">Comprar</button>
+
                 </article>
+                <article>
+                    <h3>Snoopy Corazón</h3>
+                    <img src="images/snoopy.png" alt="Amigurumi Snoopy">
+                    <p class="precio">S/55.00</p>
+                    <button class="btn-comprar" onclick="ElegirProducto('Snoopy Corazón')">Comprar</button>
+
+                </article>
+
+                <article>
+                    <h3>Mono bebé</h3>
+                    <img src="images/mono.jpg" alt="Amigurumi mono">
+                    <p class="precio">S/25.00</p>
+                    <button class="btn-comprar" onclick="ElegirProducto('Mono bebé')">Comprar</button>
+
+                </article>
+
+                <article>
+                    <h3>Tortuga</h3>
+                    <img src="images/tortuga.jpg" alt="Amigurumi tortuga">
+                    <p class="precio">S/19.00</p>
+                    <button class="btn-comprar" onclick="ElegirProducto('Tortuga')">Comprar</button>
+
+                </article>
+
+                <article>
+                    <h3>Capibara</h3>
+                    <img src="images/capibara.jpg" alt="Amigurumi capibara">
+                    <p class="precio">S/33.00</p>
+                    <button class="btn-comprar" onclick="ElegirProducto('Capibara')">Comprar</button>
+
+                </article>
+
+                <article>
+                    <h3>Batman</h3>
+                    <img src="images/batman.jpg" alt="Amigurumi batman">
+                    <p class="precio">S/70.00</p>
+                    <button class="btn-comprar" onclick="ElegirProducto('Batman')">Comprar</button>
+
+                </article>
+
+                <article>
+                    <h3>Ramo de Snoopy</h3>
+                    <img src="images/ramosnoopy.jpg" alt="Ramo de Snoopy">
+                    <p class="precio">S/67.00</p>
+                    <button class="btn-comprar" onclick="ElegirProducto('Ramo Snoopy')">Comprar</button>
+
+                </article>
+
+                <article>
+                    <h3>Unicornio Bailarina</h3>
+                    <img src="images/unicornio.jpg" alt="Amigurumi unicornio">
+                    <p class="precio">S/19.00</p>
+                    <button class="btn-comprar" onclick="ElegirProducto('Unicornio Bailarina')">Comprar</button>
+
+                </article>
+                <article>
+                    <h3>Grinch</h3>
+                    <img src="images/grinch.jpg" alt="Amigurumi Grinch">
+                    <p class="precio">S/35.00</p>
+                    <button class="btn-comprar" onclick="ElegirProducto('Grinch')">Comprar</button>
+
+                </article>
+
             </div>
+
         </section>
     </main>
 </body>
 </html>
-<!-- por terminar html -->
