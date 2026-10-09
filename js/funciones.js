@@ -4,14 +4,10 @@ function ElegirProducto(nombre){
 
 }
 
-function MostrarResumenPedido(){
+function MostrarResumen(evento){
     evento.preventDefault()
-
-    const tienda = "Amigurumis - Susana Atuncar 🧸"
     let nombre = document.getElementById("nombre").value
-    let correo = document.getElementById("correo").value
     let producto = document.getElementById("producto").value
-    let detalle = document.getElementById("detalle").value 
-
-    let resumen 
+    document.getElementById("resumen").innerHTML= "¡Gracias " + nombre + "! 🧸❤️<p>Recibimos tu pedido de: <b>" + producto + "</b></p>"
 }
+    document.getElementById("formulario").addEventListener("submit", MostrarResumen)
