@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigurumis</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -24,28 +22,60 @@
             <li><a href="#tutoriales">Tutoriales</a></li>
             <li><a href="#testimonios">Testimonios</a></li>
             <li><a href="#pedidos">Pedidos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
            </ul>
         </nav>
     </header>
-
     <main>
-        <section  class="home"  id="inicio">
-           <h1>Amigurumis tejidos con mucho amor y con encanto de ternura </h1>
-           <p>
-            Regalos únicos e inigualables, perfecto para regalar a esa persona especial
-           </p>
-            <a href="#catalogo" class="btn-catalogo">Ver nuestro Catálogo</a>
-        </section>
-        <section class="amigurumi" id="amigurumis">
-            <h2>¿Qué hace tan especial a los amigurumis?</h2>
+
+    <section id="inicio">
+     <div id="carruselInicio" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/portada1.jpg" class="d-block w-100" alt="Amigurumis en una canasta con lanas">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tejidos hechos a mano</h5>
+                    <p>Cada amigurumi se teje con mucho amor y cariño.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portada2.jpg" class="d-block w-100" alt="Amigurumis de animalitos tejidos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Regalos únicos</h5>
+                    <p>Perfectos para regalar a esa persona especial.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselInicio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselInicio" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+     </div>
+    </section>
+
+
+    <section class="home">
+    <h1>Amigurumis tejidos con mucho amor y con encanto de ternura</h1>
+    <p>Regalos únicos e inigualables, perfecto para regalar a esa persona especial</p>
+    <a href="#catalogo" class="btn-catalogo">Ver nuestro Catálogo</a>
+    </section>
+
+    <section class="amigurumi" id="amigurumis">
+        <h2>¿Qué hace tan especial a los amigurumis?</h2>
             <p>
                 Estos adorables muñecos, cuyo origen se remonta al Japón, son pequeñas obras de arte tejidas a mano con la técnica de crochet.
                 Más allá de su apariencia tierna, su cuerpo suave y su relleno esponjoso, los amigurumis tienen la capacidad de representar cualquier forma,
                 desde animales y plantas hasta tus personajes favoritos. Lo que realmente los hace únicos es su mística: cuenta la leyenda que son guardianes secretos y confidentes eternos.
                 Al no tener boca, estos pequeños compañeros están diseñados para escuchar y proteger tus sentimientos en silencio.
             </p>
-        </section>
+    </section>
 
         <section class="catalog" id="catalogo">
             <h2>Catálogo</h2>
@@ -98,7 +128,7 @@
                 </article>
 
                 <article>
-                    <h3>Ramo de Snoopy</h3>
+                    <h3>Ramo Snoopy</h3>
                     <img src="images/ramosnoopy.jpg" alt="Ramo de Snoopy">
                     <p class="precio">S/67.00</p>
                     <button class="btn-comprar" onclick="ElegirProducto('Ramo Snoopy')">Comprar</button>
@@ -117,12 +147,123 @@
                     <img src="images/grinch.jpg" alt="Amigurumi Grinch">
                     <p class="precio">S/35.00</p>
                     <button class="btn-comprar" onclick="ElegirProducto('Grinch')">Comprar</button>
-
                 </article>
+            </div>
+        </section>
 
+        <section class="prices" id="precios">
+             <h2>Guía de tamaño y Precios</h2>
+            <table class="tabla-moderna">
+                <thead>
+                    <tr>
+                        <th>Tamaño</th>
+                        <th>Medida aproximada...</th>
+                <th>Ideal para...</th> 
+                <th>Precio Base</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Llavero/mini</td>
+                <td>8-10 cm</td>
+                <td>Mochilas, llaves, detalles pequeños</td>
+                <td>Desde S/15.00</td>
+            </tr>
+            <tr>
+                <td>Mediano (Estándar)</td>
+                <td>15-20 cm</td>
+                <td>Regalos, decoración de escritorio</td>
+                <td>Desde S/35.00</td>
+            </tr>
+            <tr>
+                <td>Grande/ Especial</td>
+                <td>25-30 cm</td>
+                <td>Aniversarios, cumpleaños</td>
+                <td>Desde S/60.00</td>
+            </tr>
+        </tbody>  
+        </table>
+        </section>
+        <section class="sold" id="vendido">
+            <h2>Lo más vendido del año 2026</h2>
+            <article>
+                <h3>Capibara abejita</h3>
+                <img src="images/abejita.jpg" alt="Capibara Abejita">
+                <p class="precio">S/45.00</p>
+                <a href="https://wa.me/51907763969?text=Deseo comprar el producto" target="_blank" class="btn-whatsapp">Pedido por WhatsApp</a>
+            </article>
+
+            <article>
+                <h3>Capibara dino</h3>
+                <img src="images/dino.png" alt="Capibara dino">
+                <p class="precio">S/47.00</p>
+                <a href="https://wa.me/51907763969?text=Deseo comprar el producto" target="_blank" class="btn-whatsapp">Pedido por WhatsApp</a>
+            </article>
+        </section>
+        <section class="tutorial" id="tutoriales">
+            <h2>Tutoriales gratis</h2>
+            <p>Aprende a tejer estos hermosos amigurumis, con patrones totalmente gratis</p>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZjT0x8g7Edk?si=FR4Z-S8P3NpgbdVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/veT6d8jnZps?si=HePUu-sa0oYb26a2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonios">
+            <h2>Lo que cuentan nuetros clientes sobre nosotros</h2>
+            <div class="testimonials-grid">
+                <article>
+                    <p>"Hola ya me llego mi producto, me encanto, muy hermoso todo y es de mi agrado "</p>
+                     <div class="author"> Isabel Jaramillo</div>
+                </article>
+                <article>
+                    <p>
+                        "Woww gracias por hacer estos hermosos detalles a mano, a mi novio le encanto el capibara de abejita"
+                    </p>
+                    <div class="author"> Yarumi Flores</div>
+                </article>
+            </div>
+        </section>
+        <section class="orden" id="pedidos">
+            <h2>Haz tu pedido</h2>
+            <form id="formulario">
+                <label for="nombre">Nombre y Apellidos</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="correo"> Correo Personal</label>
+                <input type="email" id="correo" name="correo">
+                <label for="producto"> Producto</label>
+                <input type="text" id="producto" name="producto" placeholder="Ejemplo: Capibara">
+                <label for="detalle">Detalles del Producto</label>
+                <textarea name="detalle" id="detalle" rows="2"></textarea>
+                <button type="submit" class="btn-catalogo">
+                    Enviar Pedido
+                </button>
+            </form>
+        </section>
+
+    </main>
+    <footer >
+         <div class="contacto">
+            <div>
+                <h3>Amigurumis</h3>
+                <p>Tejidos hechos a mano con cariño en Chincha, Perú.</p>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>WhatsApp: 907763969</p>
+                    <p>susanaatuncar22@gmail.com</p>
+                </div>
+                <div>
+                    <h3>Síguenos</h3>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                    <a href="https://tiktok.com" target="_blank">Tiktok</a>
+                </div>
             </div>
 
-        </section>
-    </main>
+         </div>
+         <p class="derechos">@2026 Amigurumis - Susana Atuncar. Todos los derechos reservados.</p>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/funciones.js"></script>
 </body>
 </html>
